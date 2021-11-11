@@ -1,0 +1,44 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", "Zen Kaku Gothic Antique", sans-serif;
+  font-style: italic;
+}
+* h1 {
+  font-size: 2.5rem;
+}
+* p {
+  padding-bottom: 0.5rem;
+}
+* canvas {
+  display: block;
+  background: linear-gradient(#f6d4da 60%, white);
+  position: fixed;
+  z-index: -1;
+}
+* #container {
+  padding: 5rem 10%;
+}
+
+.accordion {
+  margin: 1rem 0;
+}
+.accordion .unwrap-button {
+  cursor: pointer;
+}
+.accordion .unwrap-button::before {
+  content: "⛄️";
+  font-style: normal;
+}
+.accordion .wrapper {
+  height: 0rem;
+  background: linear-gradient(#f2e0e3, transition);
+  transition: all 0.5s 0s ease;
+  padding: 0.5rem 1rem;
+}
+.accordion .wrapper .content {
+  opacity: 0;
+  visibility: hidden;
+}
